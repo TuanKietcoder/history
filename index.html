@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/lightslider.css">
+    <link rel="stylesheet" href="./assets/css/event.css">
+    <link rel="stylesheet" href="./assets/css/vn.css">
+    <title>Tìm Hiểu Kiến Thức Lịch Sử</title>
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="./assets/img/hth.png" class="logo">
+        </div>
+        <div class="nav-right flex-div">
+            <a href=""><i class="fa-solid fa-question"></i></i></a>
+            <a href=""><i class="fa-solid fa-bell"></i></a>
+        </div>
+    </nav>
+    <div class="banner">
+        <img src="./assets/img/banner.png">
+    </div>
+    <!-- Main -->
+    <div class="container">
+        <!-- Tab items -->
+        <div class="tabs">
+            <div class="tab-item active">
+                <i class="fa-solid fa-star"></i> Việt Nam
+            </div>
+            <div class="tab-item">
+                <i class="fa-sharp fa-solid fa-earth-americas"></i> Thế Giới
+            </div>
+            <!-- <div class="tab-item">
+                <i class="tab-icon fas fa-plus-circle"></i> Ember
+            </div>
+            <div class="tab-item">
+                <i class="tab-icon fas fa-pen-nib"></i> Vue.JS
+            </div> -->
+            <div class="line"></div>
+        </div>
+
+        <!-- Tab content -->
+        <div class="tab-content">
+            <div class="tab-pane active">
+                <h2>Tra Cứu Kiến Thức Các Môn Học</h2>
+                <p>Lưu Ý: Khi search phải viết (tên năm)-(tháng), Muốn tra tên nhân vật hay sự kiện gì phải gõ cụ thể và chính xác tên đó</p>
+                <!-- <div class="wrapper">
+                    <div id="search-container">
+                        <input type="search" id="search-input" placeholder="Thời Điểm Của Sự Kiện, Tên Sự Kiện, Tên Nhân Vật Lịch Sử,...">
+                        <button id="search">Tìm Kiếm</button>
+                    </div>
+                    <div class="buttons">
+                        <div class="button-value">Tất Cả</div>
+                        <div class="button-value">Sự Kiện</div>
+                        <div class="button-value">Nhân Vật</div>
+                    </div>
+                    <div id="products"></div>
+                </div> -->
+                <div class="container-new">
+                    <div id="search-container">
+                        <input type="search" id="menu_search" placeholder="Thời Điểm Của Sự Kiện, Tên Sự Kiện, Tên Nhân Vật Lịch Sử,..." onkeyup="searchfunc()">
+                    </div>
+                    <ul class="menu_list">
+                        <li class="menu_item">
+                            <a href="#">Ngày 2-9-1945: Bác Hồ đọc Tuyên ngôn Độc lập <br> Ngày 2-9-1945: Quốc khánh nước Cộng hòa Xã hội chủ nghĩa Việt Nam. Ngay sau khi Tổng khởi nghĩa Cách mạng Tháng Tám năm 1945 thành công, ngày 2-9-1945, tại Quảng trường Ba Đình, Hà Nội, Chủ tịch Hồ Chí Minh thay mặt Chính phủ lâm thời đã trang trọng đọc bản Tuyên ngôn Độc lập, tuyên bố trước quốc dân đồng bào cả nước và toàn thể nhân loại trên thế giới, khai sinh nước Việt Nam Dân chủ Cộng hòa (nay là Cộng hòa Xã hội chủ nghĩa Việt Nam). Từ đây, đất nước ta bước vào kỷ nguyên mới- Kỷ nguyên độc lập, tự do và chủ nghĩa xã hội.</a>
+                        </li>
+                        <hr>
+                        <li class="menu_item">
+                            <a href="#">Ngày 2-9-1947: Ngày thành lập Trung đoàn 209, Sư đoàn 312 (Quân đoàn 1).</a>
+                        </li>
+                        <hr>
+                        <li class="menu_item">
+                            <a href="#">Ngày 2-9-1948: Hội nghị chuyên môn quân giới toàn quân được tổ chức. Đây là hội nghị chuyên môn đầu tiên của toàn ngành sản xuất vũ khí nước Việt Nam.</a>
+                        </li>
+                        <hr>
+                        <li class="menu_item">
+                            <a href="#">Ngày 2-9-1955: Diễn ra lễ tuyên dương Anh hùng quân đội lần thứ hai. Đại hội tuyên dương 26 anh hùng, trong đó truy phong 8 liệt sĩ.</a>
+                        </li>
+                        <hr>
+                        <li class="menu_item">
+                            <a href="#">Ngày 2-9-1965: Ngày thành lập Sư đoàn 9 (Quân đoàn 4). Là sư đoàn chủ lực cơ động đầu tiên trên chiến trường Miền Đông Nam Bộ, được thành lập trong giai đoạn ác liệt nhất của cuộc kháng chiến chống Mỹ, cứu nước, Sư đoàn 9 đã làm nên những chiến thắng vang dội như Bầu Bàng, Dầu Tiếng, đánh bại lữ đoàn 173 thuộc sư đoàn bộ binh số 1 anh cả đỏ của Mỹ, mở ra thời kỳ “Tìm Mỹ mà đánh, tìm ngụy mà diệt”; hoàn thành xuất sắc nhiệm vụ trong Chiến dịch Hồ Chí Minh.  Sau ngày giải phóng, sư đoàn làm nhiệm vụ quân quản Sài Gòn – Gia Định, đồng thời tham gia chiến đấu bảo vệ biên giới Tây Nam của Tổ quốc và làm nhiệm vụ quốc tế, góp phần giúp nhân dân Campuchia thoát khỏi thảm họa diệt chủng.</a>
+                        </li>
+                        <hr>
+                        <li class="menu_item">
+                            <a href="#"></a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#"></a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#"></a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#"></a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane">
+                <h2>Angular</h2>
+                <p>Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.</p>
+            </div>
+            <!-- <div class="tab-pane">
+                <h2>Ember</h2>
+                <p>Ember.js is a productive, battle-tested JavaScript framework for building modern web applications. It includes everything you need to build rich UIs that work on any device.</p>
+            </div>
+            <div class="tab-pane">
+                <h2>Vue.js</h2>
+                <p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. </p>
+            </div> -->
+        </div>
+    </div>
+</body>
+<!-- <script src="./assets/js/script.js"></script> -->
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/lightslider.js"></script>
+<script src="./assets/js/event.js"></script>
+
+</html>
